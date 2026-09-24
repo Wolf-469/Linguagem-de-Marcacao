@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro de Aluno</title>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align: center">Cadastro de Aluno</h1>
+			<hr>
+		</header>
+		
+		<form action="#" method="POST">
+			<label for="nome">Nome do Aluno:</label>
+			<br>
+			<input type="text" id="nome" name="nome" placeholder="Nome do Aluno..." minlength="3" maxlength="255" required >
+			<br><br>
+			
+			<label for="ra">Registro de Aluno:</label>
+			<br><br>
+			<input type="text" id="ra" value="20261015" disabled>
+			<br><br>
+			
+			<label for="email">Email do Aluno:</label>
+			<br>
+			<input type="email" id="email" placeholder="email@email.com" required>
+			<br><br>
+			
+			<label for="telefone">Telefone do Aluno:</label>
+			<br>
+			<input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required> 
+			<br><br>
+			
+			<label for="data_nascimento">Data de Nascimento:</label>
+			<br>
+			<input type="date" id="data_nascimento" name="data_nascimento" max="2009-01-01" required>
+			<br><br>
+			
+			<label for="idade">Idade:</label>
+			<br>
+			<input type="number" id="idade" name="idade" min="17" max="100" required>
+			<br><br>
+			
+			<label for="genero">Gênero</label>
+			<br>
+			<input type="radio" id="masculino" name="genero" value="Masculino" required>Masculino
+			<br>
+			<input type="radio" id="Feminino"  name="genero" value="Feminino">Feminino
+			<br>
+			<input type="radio" id="outros" name="genero" value="Outros">Outros
+			<br><br>
+			
+			<label for="turma">Selecione a turma:</label>
+			<br>
+			<select name="turma" id="turma" required>
+				<option value="">Selecione...</option>
+				<option value="1°EMA">1° EMA</option>
+				<option value="1°EMB">1° EMB</option>
+				<option value="2°EMB">2° EMA</option>
+				<option value="2°EMB">2° EMB</option>
+				<option value="3°EMA">3° EMA</option>
+				<option value="3°EMB">3° EMB</option>
+			</select>
+			<br><br>
+			
+			<label for="foto">Foto do Aluno:</label>
+			<br>
+			<input type="file" id="foto" name="foto" required>
+			<br><br>
+			
+			<label for="comentarios">Reclamações, comentarios e elogios...</label>
+			<br>
+			<textarea id="comentarios" name="comentarios" placeholder="Texto..."></textarea>
+			<br><br>
+			
+			<input type="checkbok" id="termos" name="termos" required>Li e aceito os Termos e Condições
+			<br>
+			<input type="checkbok" id="notificacoes" name="notificacoes">Aceito receber notificações
+			<br><br>
+			
+			<input type="submit" value="Cadastro aluno">
+		</form>
+	</body>
+</html>
